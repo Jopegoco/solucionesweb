@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<meta charset="ISO-8859-1">
+
+<title>Vista Para crear Empleado</title>
+<link rel="stylesheet" href="{% static 'css/reset.css' %}">
+<link rel="stylesheet" href="{% static 'css/styles1.css' %}">
+<!--  
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
+-->
+</head>
+<body>
+	<img src="{% static 'imagenes/fondo_1920x1080.jpg' %}">
+	<div id="ventanalogin">
+		<form method="POST">
+			<p>
+				<!-- Encabezado -->
+				<label for="encabezado">AGREGAR EMPLEADO</label>
+			</p>
+			<!-- 
+		{% if messages %}
+		<ul class="messages">
+			{% for message in messages %}
+			<div class="alert alert-primary" role="alert">{{ message }}</div>
+			{% endfor %}
+		</ul>
+		{% endif %}
+		 -->
+
+			<div class="form-group">
+				<label for="correo">Correo electronico:</label> <input type="text"
+					id="correo" name="correo" placeholder="Ingrese su correo">
+			</div>
+			<div class="form-group">
+				<label for="nombre">Nombre del Empleado:</label> <input type="text"
+					id="nombre" name="nombre" placeholder="Ingrese su nombre">
+			</div>
+			<div class="form-group">
+				<label for="telefono">Telefono de habitacion:</label> <input
+					type=text id="telefono" id="telefono" name="telefono"
+					placeholder="Ingrese su telefono">
+			</div>
+			<button type="submit" value="Enviar">Agregar</button>
+		</form>
+	</div>
+
+	<!-- 
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384 JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+	 -->
+
+</body>
+</html>

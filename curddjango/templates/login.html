@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<!-- https://www.forcode.es/lenguaje/html-css/ -->
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Autenticacion</title>
+
+<!-- CSS -->
+<link rel="stylesheet" href="/css/reset.css">
+<link rel="stylesheet" href="/css/styles1.css">
+<link rel="stylesheet" href="/imagenes/fondo_1920x1080.jpg">
+<!--  
+<link rel="stylesheet" href="static/css/styles1.css">
+-->
+<link rel="stylesheet" href="static/css/styles1.css">
+</head>
+
+<body>
+	<img class="img" src="recursos/fondo_1920x1080.jpg">
+	
+	<div id="ventanalogin">
+		<form>
+			<p>
+				<!-- Encabezado -->
+				<label for="encabezado">INICIO DE SESÍON</label>
+			</p>
+			<!-- Usuario -->
+			<label for="nombre">Usuario:</label>
+			<p>
+				<a href="#">Olvido su Usuario?</a> <input type="text" id="nombre"
+					name="nombre" tabindex="1">
+			</p>
+
+			<!-- Clave de usuario -->
+			<label for="clave">Contraseña:</label>
+			<p>
+				<a href="#">Olvido su contraseña?</a> <input type="password"
+					id="clave" name="clave" tabindex="2">
+			</p>
+
+			<!--  <input type="checkbox"><label class="check" for="checkbox">Keep me logged in</label> -->
+
+			<!-- boton enviar-->
+			<button tabindex="3" type="submit" value="Enviar">Enviar</button>
+		</form>
+	</div>
+</body>
+</html>
